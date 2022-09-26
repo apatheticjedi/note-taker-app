@@ -25,8 +25,7 @@ router.post('/notes', (req, res) => {
         fs.writeFileSync(
             path.join(__dirname, '../db/db.json'),
             JSON.stringify(data), null, 2);
-    }
-    
+    }     
 });
 
 

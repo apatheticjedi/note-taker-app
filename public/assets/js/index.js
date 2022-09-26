@@ -74,7 +74,7 @@ const handleNoteSave = () => {
   saveNote(newNote).then(() => {
     getAndRenderNotes();
     renderActiveNote();
-  });
+  }).then(location.reload());
 };
 
 // Delete the clicked note
