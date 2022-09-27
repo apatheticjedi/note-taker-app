@@ -11,7 +11,6 @@ app.use(express.static('public'));
 app.use('/api', data);
 app.use('/', HTML);
 
-
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}`);
 });
